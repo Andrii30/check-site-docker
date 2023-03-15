@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Site Status</title>
+    <style>
+      table {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+      td, th {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+      
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+      
+      th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        background-color: #4CAF50;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Site Status</h1>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Status</th>
+      </tr>
+      {% for status in status_list %}
+        <tr>
+          <td>{{ status['name'] }}</td>
+          <td>{{ status['status'] }}</td>
+        </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
+
+
