@@ -1,23 +1,3 @@
-# from flask import Flask, render_template
-# import requests
-
-# app = Flask(__name__)
-
-# def check_google_status():
-#     try:
-#         response = requests.get('https://www.google.com')
-#         return response.status_code == 200
-#     except:
-#         return False
-
-# @app.route('/')
-# def index():
-#     status = check_google_status()
-#     return render_template('index.html', status=status)
-
-# if __name__ == '__main__':
-#     app.run(debug=True, host='0.0.0.0')
-
 from flask import Flask, render_template
 import requests
 
